@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken")
 //Configurando o cors
 app.use(cors())
 
-//A chave do token. Não passar para ninguém 
+//A chave do token. Essa informação não deve ser passada pois com ela podem ser criados tokens falsos
 const JWTsecret = 'dkopdhudufihuifpkdmiuh'
 
 //Middleware de autorização
